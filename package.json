@@ -1,7 +1,6 @@
 {
-  "name": "node-shopping-list-v5",
+  "name": "node-shopping-list-recipes-as-mongoose",
   "version": "0.0.1",
-  "description": "Shopping list app to demo 'the modern classic'",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
