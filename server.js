@@ -63,7 +63,10 @@ app.put('/recipes/:id', (req, res) => {
   }
   Recipe
     .findByIdAndUpdate(req.params.id, {
-      name: req.body.name, ingredients: req.body.ingredients})
+      $set: {
+        name: req.body.name,
+        ingredients: req.body.ingredients}
+    })
     .then(
       recipe => res.status(204).end(),
       err => res.status(500).json({message: 'Internal server error'}));
